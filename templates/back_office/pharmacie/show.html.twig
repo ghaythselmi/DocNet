@@ -1,0 +1,41 @@
+{% extends 'back_office/base.html.twig' %}
+
+{% block title %}Pharmacie{% endblock %}
+
+{% block content %}
+<div class="container">
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ pharmacie.id }}</td>
+            </tr>
+            <tr>
+                <th>Nom</th>
+                <td>{{ pharmacie.Nom }}</td>
+            </tr>
+            <tr>
+                <th>Adresse</th>
+                <td>{{ pharmacie.Adresse }}</td>
+            </tr>
+            <tr>
+                <th>Tempo</th>
+                <td>{{ pharmacie.Tempo ? pharmacie.Tempo|date('H:i:s') : '' }}</td>
+            </tr>
+            <tr>
+                <th>Tempf</th>
+                <td>{{ pharmacie.tempf ? pharmacie.tempf|date('H:i:s') : '' }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+     <a href="{{ path('app_pharmacie_index') }}">
+                 <button type="button" class="btn btn-primary">Retourner</button>
+
+
+<a href="{{ path('app_pharmacie_edit', {'id': pharmacie.id}) }}">
+             <button type="button" class="btn btn-primary">Modifier</button>
+
+   </div>
+{% endblock %}
