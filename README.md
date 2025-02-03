@@ -1,4 +1,4 @@
-DocNet Project - Team Collaboration 🛠️🤝
+ <h2>🛠️ DocNet Project - Team Collaboration 🤝</h2>
 This Symfony project was developed as part of a collaborative effort between team members. Each contributor worked on different aspects of the application, from backend development to frontend integration. 
 
 💡 Key Features:
